@@ -1,21 +1,27 @@
-# Just Install Docker On Your Platform (It is a Simple Development Dockerfile not a MultiStage Production) :|
+🚀 Quick Start
 
-```
-    Run docker compose up --build -d
-```
+🐳 Get Started with Docker
 
-# Add .env
-```
-    AUTH_SECRET=YOUR AUTH SECRET
-    AUTH_GOOGLE_ID=Your Google ID
-    AUTH_GOOGLE_SECRET=Your Google Secret
-```
+Just install Docker on your platform – it’s a simple development Dockerfile (not a multi-stage production build).
+Then, run the following command to start the project:
 
-# Tech Stack
-```
-  Web Framework - Next.js
-  Language - Typescript
-  CSS Library - TailwindCSS
-  Styling Tools - ShadcnUi and Aceternity Ui
+bash
 
-```
+docker compose up --build -d
+
+🔑 Add your Environment Variables
+
+Make sure to create a .env file in the root directory and add the following:
+
+bash
+
+AUTH_SECRET=YOUR_AUTH_SECRET
+AUTH_GOOGLE_ID=YOUR_GOOGLE_ID
+AUTH_GOOGLE_SECRET=YOUR_GOOGLE_SECRET
+
+🛠 Tech Stack
+
+    Web Framework: Next.js
+    Language: TypeScript
+    CSS Library: TailwindCSS
+    Styling Tools: Shadcn UI, Aceternity UI
