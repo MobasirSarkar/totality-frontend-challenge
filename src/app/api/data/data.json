@@ -1,5 +1,5 @@
 {
-  "property": [
+  "propertyData": [
         {
           "id": "852223931024",
           "name":"Mobasir Realtor",
@@ -92,7 +92,7 @@
         },
         {
           "id": "19639490088",
-          "name": "West Housing,
+          "name": "West Housing",
           "area": "Westchester County",
           "address": "95 Vernon ave, Scarsdale, NY 10538",
           "city": "Scarsdale",

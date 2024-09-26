@@ -22,7 +22,7 @@ export default async function Signin() {
                   }>
                   <Button
                      variant={"link"}
-                     className='w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                     className='w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded capitalize'
                      type='submit'
                   >
                      signOut
@@ -42,7 +42,7 @@ export default async function Signin() {
                   }>
                   <Button
                      variant={"link"}
-                     className='w-48 bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                     className='w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
                      type='submit'
                   >
                      SignIn

@@ -1,17 +1,19 @@
 import React from 'react'
 import { auth } from '../../../auth'
+import { propertyData } from "../api/data/data.json"
 import FallbackSignIn from '@/components/FallbackSignIn'
-import Signin from '@/components/Signin'
-import PropertyCard from '@/components/_shared/PropertyCard'
+import { PropertyCard } from '@/components/_shared/PropertyCard'
 
 export default async function PropertyPage() {
    const session = await auth()
    if (!session) return <FallbackSignIn />
    return (
-      <div className='w-screen h-screen flex justify-center items-center flex-col gap-3'>
-         <PropertyCard />
-         <Signin />
+      <div className='h-full bg-gray-50 max-w-[90rem] mx-auto'>
+         <div className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-1 transition-all duration-75'>
+            {propertyData.map((property) => (
+               <PropertyCard key={property.id} property={property} />
+            ))}
+         </div>
       </div>
    )
 }
-
