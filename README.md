@@ -15,9 +15,11 @@ Make sure to create a .env file in the root directory and add the following:
 
 bash
 
+```
 AUTH_SECRET=YOUR_AUTH_SECRET
 AUTH_GOOGLE_ID=YOUR_GOOGLE_ID
 AUTH_GOOGLE_SECRET=YOUR_GOOGLE_SECRET
+```
 
 🛠 Tech Stack
 
