@@ -7,7 +7,7 @@ Then, run the following command to start the project:
 
 bash
 
-docker compose up --build -d
+```docker compose up --build -d```         
 
 🔑 Add your Environment Variables
 
