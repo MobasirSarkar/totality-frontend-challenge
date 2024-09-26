@@ -25,7 +25,7 @@ export default async function Signin() {
                      className='w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded capitalize'
                      type='submit'
                   >
-                     signOut
+                     sign-Out
                   </Button>
                </form>
                :
@@ -36,7 +36,7 @@ export default async function Signin() {
                         await signIn('google', {
                            redirect: true,
                            redirectTo: "/property"
-                        })
+                        }, '[profile, email]')
 
                      }
                   }>

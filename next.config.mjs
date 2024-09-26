@@ -8,6 +8,10 @@ const nextConfig = {
 				port: "",
 				pathname: "/a/*",
 			},
+			{
+				protocol: "https",
+				hostname: "www.freepik.com",
+			},
 		],
 	},
 };

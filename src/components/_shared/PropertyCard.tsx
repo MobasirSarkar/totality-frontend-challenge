@@ -1,10 +1,9 @@
-"use client";
+"use client"
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Property } from "../../../types/types";
 import { formatPrice } from "@/lib/utils";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 
@@ -13,9 +12,6 @@ interface PropertyCardProps {
 }
 
 export function PropertyCard({ property }: PropertyCardProps) {
-   const handleClick = () => {
-      alert('hello')
-   }
    const imgUrl: string = `/img/property/${property.image}`
    return (
       <CardContainer className="~sm/2xl:~w-[25rem]/[27rem]">
@@ -62,13 +58,9 @@ export function PropertyCard({ property }: PropertyCardProps) {
             <div className="flex justify-between items-center mt-4">
                <CardItem
                   translateZ={0}
+                  className="px-5 py-4 rounded-full bg-[#1ED760] text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
                >
-                  <Button
-                     onClick={handleClick}
-                     className="px-5 py-4 rounded-full bg-[#1ED760] text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
-                  >
-                     Book Now
-                  </Button>
+                  Buy Now
                </CardItem>
                <CardItem
                   translateZ={0}

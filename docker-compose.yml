@@ -1,0 +1,19 @@
+services:
+  client:
+    container_name: totality-corps
+    build:
+      context: ./
+      dockerfile: dev.Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - my_network
+
+networks:
+  my_network:

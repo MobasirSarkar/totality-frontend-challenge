@@ -14,6 +14,18 @@ export interface Property {
 	construction: string[];
 }
 
+export type Cart = {
+	id: string;
+	items: CartItem[];
+	userId: string;
+};
+
+export interface CartItem {
+	propertyId: string;
+	quantity: number;
+	cartId: string;
+}
+
 export interface PropertyList {
 	property: Property[];
 }

@@ -1,7 +1,6 @@
 import { cache } from "react";
 import { propertyData } from "../../../../api/data/data.json";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import PropertyDetailsCard from "@/components/_shared/property-details";
 
 interface PropertyDetailsPageProps {
