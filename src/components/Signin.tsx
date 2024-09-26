@@ -15,7 +15,7 @@ export default async function Signin() {
                         "use server"
                         await signOut({
                            redirect: true,
-                           redirectTo: "http:localhost:3000"
+                           redirectTo: "/"
                         })
 
                      }
@@ -35,7 +35,7 @@ export default async function Signin() {
                         "use server"
                         await signIn('google', {
                            redirect: true,
-                           redirectTo: "http://localhost:3000/property"
+                           redirectTo: "/property"
                         }, '[profile, email]')
 
                      }

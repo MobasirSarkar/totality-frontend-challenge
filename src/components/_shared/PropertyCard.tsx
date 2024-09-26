@@ -58,7 +58,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             <div className="flex justify-between items-center mt-4">
                <CardItem
                   translateZ={0}
-                  className="px-5 py-4 rounded-full bg-[#1ED760] text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
+                  className="mt-1 px-3 py-2 rounded-lg bg-[#1ED760] text-white tracking-widest capitalize transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200 font-bold"
                >
                   Buy Now
                </CardItem>
